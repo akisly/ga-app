@@ -14,11 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <button onClick={() => {
-          ReactGA.event({
-            category: 'Home',
-            action: 'Click',
-            label: 'Home'
-          })
+          ReactGA.event('add_payment_info', { currency: 'USD', value: '1.00' });
         }}>
           User
         </button>
