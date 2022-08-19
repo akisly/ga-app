@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import ReactGA from 'react-ga';
 import styles from '../styles/Home.module.css'
+
+ReactGA.initialize('G-GEJLQ0ZRSQ');
 
 export default function Home() {
   return (
