@@ -1,4 +1,4 @@
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import '../styles/globals.css'
 
 ReactGA.initialize('G-E16JC1JRC9');

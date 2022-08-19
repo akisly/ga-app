@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ReactGA from 'react-ga';
+import ReactGA from 'react-ga4';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
