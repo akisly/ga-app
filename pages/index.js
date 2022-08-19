@@ -18,6 +18,11 @@ export default function Home() {
         }}>
           User
         </button>
+        <button onClick={() => {
+          ReactGA.event('sign_up', { method: 'Google' });
+        }}>
+          sign_up
+        </button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
