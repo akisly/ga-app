@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import ReactGA from 'react-ga4';
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -14,23 +13,9 @@ export default function Home() {
 
       <main className={styles.main}>
         <button onClick={() => {
-          ReactGA.event('add_payment_info', { currency: 'USD', value: '1.00' });
+          dataLayer.push({ event: "sidebar.click" });
         }}>
-          User
-        </button>
-        <button onClick={() => {
-          ReactGA.event('sign_up', { method: 'Google' });
-        }}>
-          sign_up
-        </button>
-        <button onClick={() => {
-          ReactGA.event({
-            category: 'Navigation',
-            action: 'Clicked Home',
-            label: 'Home',
-          });
-        }}>
-          main layout
+          sidebar.click
         </button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
