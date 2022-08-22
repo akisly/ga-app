@@ -23,6 +23,15 @@ export default function Home() {
         }}>
           sign_up
         </button>
+        <button onClick={() => {
+          ReactGA.event({
+            category: 'Navigation',
+            action: 'Clicked Home',
+            label: 'Home',
+          });
+        }}>
+          main layout
+        </button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
