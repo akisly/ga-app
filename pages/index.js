@@ -13,9 +13,14 @@ export default function Home() {
 
       <main className={styles.main}>
         <button onClick={() => {
-          dataLayer.push({ event: "sidebar.click" });
+          dataLayer.push({ event: "sidebar.click", text: 'sidebar.click' });
         }}>
           sidebar.click
+        </button>
+        <button onClick={() => {
+          dataLayer.push({ event: "header.click", text: 'header.click' });
+        }}>
+          header.click
         </button>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
