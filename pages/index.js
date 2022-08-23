@@ -12,13 +12,13 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <button className="sidebar" onClick={() => {
-          dataLayer.push({ event: "sidebar.click" });
+        <button className="sidebar" onClick={({ target }) => {
+          dataLayer.push({ event: "sidebar.click", "gtm.element": target });
         }}>
           sidebar.click
         </button>
-        <button className="header" onClick={() => {
-          dataLayer.push({ event: "header.click" });
+        <button className="header" onClick={({ target }) => {
+          dataLayer.push({ event: "header.click", "gtm.element": target });
         }}>
           header.click
         </button>
