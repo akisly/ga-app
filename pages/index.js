@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -12,11 +13,14 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <button className="sidebar" onClick={({ target }) => {
-          dataLayer.push({ event: "sidebar.click", "gtm.element": target });
-        }}>
-          sidebar.click
-        </button>
+        <Link href="/">
+          <a className="sidebar">sidebar.click.link</a>
+        </Link>
+        {/*<button className="sidebar" onClick={({ target }) => {*/}
+        {/*  dataLayer.push({ event: "sidebar.click", "gtm.element": target });*/}
+        {/*}}>*/}
+        {/*  sidebar.click*/}
+        {/*</button>*/}
         <button className="header" onClick={({ target }) => {
           dataLayer.push({ event: "header.click", "gtm.element": target });
         }}>
