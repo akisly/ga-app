@@ -127,3 +127,13 @@
     filter: invert(1);
   }
 }
+
+.wrapper {
+  width: 804px;
+  height: 968px;
+  background: #EBEEF2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 56px 0;
+}
