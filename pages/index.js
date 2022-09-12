@@ -14,7 +14,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <Link href="/">
-          <a className="sidebar" data-link-name="sidebar.click.link">sidebar.click.link</a>
+          <a className="sidebar" id="test" data-link-name="sidebar.click.link">sidebar.click.link</a>
         </Link>
         {/*<button className="sidebar" onClick={({ target }) => {*/}
         {/*  dataLayer.push({ event: "sidebar.click", "gtm.element": target });*/}
